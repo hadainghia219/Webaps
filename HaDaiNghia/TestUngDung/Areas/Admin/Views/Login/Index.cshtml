@@ -1,0 +1,48 @@
+﻿@model TestUngDung.Areas.Admin.Models.LoginModel
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Đăng nhập</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .khung {
+            margin: auto;
+            max-width: 600px;
+            min-height: 200px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+    {
+        <div class="khung mt-md-5">
+            <h3 class='text-center'>ĐĂNG NHẬP HỆ THỐNG</h3>
+            <div class="form-group">
+                <label for="">Tên đăng nhập</label>
+                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @autofocus = "autofocus" })
+            </div>
+            <div class="form-group">
+                <label for="">Mật khẩu</label>
+                @Html.PasswordFor(model => model.PassWord, new { @class = "form-control" })
+            </div>
+            <div class="text-danger">
+                @Html.ValidationSummary(false, "", "error")
+            </div>
+            <div class="form-group text-right">
+                <button type="submit" class="btn btn-success text-right" name="DANGNHAP">Đăng nhập </button>
+            </div>
+
+        </div>
+    }
+
+</body>
+
+</html>

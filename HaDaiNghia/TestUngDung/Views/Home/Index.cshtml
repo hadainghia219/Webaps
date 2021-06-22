@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="main_title">
+        <h2>Our Featured Cakes</h2>
+        <h5> Seldolor sit amet consect etur</h5>
+    </div>
+    <div class="cake_feature_row row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-6">
+                <div class="cake_feature_item">
+                    <div class="cake_img">
+                        <img src="@item.Image" alt="">
+                    </div>
+                    <div class="cake_text">
+                        <h4>$ @item.UnitCost</h4>
+                        <h3>@item.Name</h3>
+                        <a class="pest_btn" href="#">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+

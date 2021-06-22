@@ -1,0 +1,65 @@
+﻿@model PagedList.IPagedList<ModelEF.Model.Product>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+<div class="card-header">
+    <div class="row">
+        <div class="col-md-6">
+            <strong class='text-danger'>
+                DANH SÁCH SẢN PHẨM
+            </strong>
+        </div>
+        <div class="col-md-6 text-right">
+            <a class="btn btn-sm btn-success" href="/Admin/Product/Create"><i class="fas fa-plus-circle"></i>Thêm</a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    @using (Html.BeginForm("Index", "Product", FormMethod.Get))
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-4">
+                    <input type="text" name="searchString" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit">Tìm kiếm</button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <table id="myTable" class="table table-triped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th class="text-center" style="width: 20px;">ID</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>LoaiSP_ID</th>
+                <th class="text-center">Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="row_@item.ID">
+                    <td class="text-center">@item.ID</td>
+                    <td>@item.Name</td>
+                    <td>@item.UnitCost</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.CatID</td>
+                    <td class="text-center" style="padding-top: 35px">
+                        <a class="btn btn-sm btn-info"
+                           href="/Admin/Product/Edit/@item.ID"><i class="fas fa-edit"></i></a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

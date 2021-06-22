@@ -1,0 +1,14 @@
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\ModelEF.dll.config
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\ModelEF.dll
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\ModelEF.pdb
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\EntityFramework.dll
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\EntityFramework.xml
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\obj\Debug\ModelEF.csprojResolveAssemblyReference.cache
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\obj\Debug\ModelEF.dll
+c:\users\kjssm\documents\visual studio 2015\Projects\HaDaiNghia\ModelEF\obj\Debug\ModelEF.pdb
+C:\Users\kjssm\Documents\Visual Studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\PagedList.dll
+C:\Users\kjssm\Documents\Visual Studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\PagedList.Mvc.dll
+C:\Users\kjssm\Documents\Visual Studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\PagedList.xml
+C:\Users\kjssm\Documents\Visual Studio 2015\Projects\HaDaiNghia\ModelEF\bin\Debug\PagedList.Mvc.xml
